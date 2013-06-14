@@ -64,6 +64,28 @@
             .TEST-box-B {
                 background: orange;
             }
+            
+            .TEST-box-row {
+                display: table-row;
+            }
+            
+            .TEST-box-cell {
+                display: table-cell;
+            }
+            
+            .TEST-box-padding-A {
+                background: black;
+                color: white;
+            }
+            
+            .TEST-box-padding-B {
+                background: white;
+                color: black;
+            }
+            
+            .TEST-box-padding {
+                padding: 10px;
+            }
             /*]]>*/
         </style>
     </head>
@@ -78,10 +100,26 @@
             <div class="TEST-layout">
                 <div class="TEST-layout-row">
                     <div class="TEST-layout-cell TEST-layout-cell-A">
-                        <div class="TEST-box TEST-box-A"></div>
+                        <div class="TEST-box TEST-box-A">
+                            <div class="TEST-box-row">
+                                <div class="TEST-box-cell">
+                                    <div class="TEST-box-padding TEST-box-padding-A">
+                                        Box A
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div class="TEST-layout-cell TEST-layout-cell-B">
-                        <div class="TEST-box TEST-box-B"></div>
+                        <div class="TEST-box TEST-box-B">
+                            <div class="TEST-box-row">
+                                <div class="TEST-box-cell">
+                                    <div class="TEST-box-padding TEST-box-padding-B">
+                                        Box B
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
