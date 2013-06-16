@@ -124,6 +124,44 @@
                 </div>
             </div>
             
+            <p>Browser: <code><span class="user-agent-object">[...]</span></code></p>
+            <script>
+                //<![CDATA[
+                (function (global) {
+                    'use strict'
+                    
+                    var elem = document.querySelector('.user-agent-object')
+                    
+                    if (!elem) {
+                        return
+                    }
+                    
+                    elem.classList.remove('user-agent-object')
+                    elem.innerHTML = ''
+                    elem.textContent = navigator.userAgent
+                }) (this)
+                //]]>
+            </script>
+            
+            <p>Date: <code><span class="date-object">[...]</span></code></p>
+            <script>
+                //<![CDATA[
+                (function (global) {
+                    'use strict'
+                    
+                    var elem = document.querySelector('.date-object')
+                    
+                    if (!elem) {
+                       return
+                    }
+                    
+                    elem.classList.remove('date-object')
+                    elem.innerHTML = ''
+                    elem.textContent = new Date().toLocaleString()
+                }) (this)
+                //]]>
+            </script>
+            
             <p>Old version of test <a href="http://test-for-size-of-div.github.io" target="_blank" >here</a></p>
             
             <hr />
